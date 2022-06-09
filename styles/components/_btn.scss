@@ -1,0 +1,32 @@
+.btn {
+    background: none;
+    border: solid $neutral-col-white 2px;
+    color: $neutral-col-white;
+    text-align: center;
+    padding: 10px 30px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include f-karla;
+    font-weight: $fw-lg;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all .2s ;
+
+    &:hover {
+        background-color: $neutral-col-white;
+        color: $neutral-col-dark;
+    }
+
+    &--dark {
+        color: $neutral-col-dark;
+        border-color: $neutral-col-dark;
+
+        &:hover {
+            background-color: $neutral-col-dark;
+            color: $neutral-col-white;
+        }
+    }
+}
+
+

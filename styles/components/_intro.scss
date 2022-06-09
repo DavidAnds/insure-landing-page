@@ -1,0 +1,109 @@
+.intro {
+    position: relative;
+    &__line {
+        height: 1px;
+        width: 40%;
+        max-width: 200px;
+        background-color: $neutral-col-white;
+        display: none;
+        margin-left: 20px;
+    }
+
+    &__img-container {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text-container {
+        padding: 80px 20px;
+        text-align: center;
+        background: $primary-col-1
+            url(../../images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;
+        color: $neutral-col-white;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        margin-inline: auto;
+    }
+
+    &__bg-right {
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+    }
+
+    &__bg-right-dt {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 25%;
+    }
+    &__bg-left-dt {
+        position: absolute;
+        display: none;
+        top: 75%;
+        width: 10%; 
+    }
+}
+
+@media (min-width: $mq-md) {
+    .intro {
+        padding-top: 80px;
+        background: $primary-col-1;
+
+        &__line {
+            display: block;
+        }
+
+        &__text-container {
+            background: none;
+            text-align: left;
+            width: 50%;
+        }
+
+        &__btn {
+            margin-inline: 0;
+        }
+
+        &__img-container {
+            position: absolute;
+            max-height: none;
+            right: 20px;
+            width: 40%;
+        }
+
+        &__bg-right {
+            display: none;
+        }
+
+        &__bg-left-dt {
+            display: block;
+        }
+
+        &__bg-right-dt {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: $mq-lg) {
+    .intro {
+        
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+}

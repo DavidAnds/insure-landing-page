@@ -1,0 +1,88 @@
+.navigation {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    z-index: 200;
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &__menu-btn {
+        background: none;
+        border: none;
+    }
+
+    &__mb {
+        transform: translateY(-200%);
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primary-col-1 url(../../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 2;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 26px;
+
+        transition: all 0.4s ease-out;
+    }
+
+    &__mb--active {
+        transform: translateY(0);
+    }
+
+    &__cp {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        max-width: 500px;
+    }
+
+    &__links {
+        display: block;
+        cursor: pointer;
+
+        &--mb {
+            margin-bottom: 30px;
+            color: $neutral-col-white;
+            font-size: 1.2rem;
+        }
+
+        &--cp {
+            color: $neutral-col-light;
+            transition: color 0.2s ease-out;
+
+            &:hover {
+                color: $neutral-col-dark;
+            }
+        }
+    }
+
+    &__btn-cp {
+        width: 70%;
+    }
+}
+
+@media (min-width: $mq-md) {
+    .navigation {
+        &__mb {
+            display: none;
+        }
+
+        &__menu-btn {
+            display: none;
+        }
+
+        &__cp {
+            display: flex;
+        }
+    }
+}

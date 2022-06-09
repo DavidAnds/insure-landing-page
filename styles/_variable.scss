@@ -1,0 +1,24 @@
+$primary-col-1: hsl(256, 26%, 20%);
+$primary-col-2: hsl(216, 30%, 68%);
+
+$neutral-col-dark: hsl(270, 9%, 17%);
+$neutral-col-light: hsl(273, 4%, 51%);
+$neutral-col-white: hsl(0, 0%, 98%);
+
+$fw-md: 400;
+$fw-lg: 700;
+
+$mq-sm: 640px;
+$mq-md: 768px;
+$mq-lg: 1024px;
+$mq-xl: 1280px;
+$mq-2xl: 1536px;
+
+
+@mixin  f-display {
+    font-family: 'DM Serif Display', serif;
+}
+
+@mixin f-karla {
+    font-family: 'Karla', sans-serif;
+}

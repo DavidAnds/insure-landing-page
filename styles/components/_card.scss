@@ -1,0 +1,32 @@
+.card {
+    margin-inline: auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+
+    &__logo {
+        margin-bottom: 40px;
+    }
+
+    &__icon {
+        margin-inline: auto;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $neutral-col-light;
+    }
+}
+
+@media (min-width: $mq-md) {
+    .card {
+        text-align: left;
+
+        &__icon {
+            margin-inline: 0;
+        }
+    }
+}

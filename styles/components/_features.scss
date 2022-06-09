@@ -1,0 +1,51 @@
+.features {
+    margin-top: 160px;
+
+    &__line {
+        height: 1px;
+        width: 60%;
+        background-color: $primary-col-1;
+        margin-inline: auto;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $neutral-col-dark;
+        margin-bottom: 80px;
+    }
+
+    &__cards {
+        display: grid;
+        row-gap: 80px;
+    }
+}
+
+@media (min-width: $mq-md) {
+    .features {
+        &__line {
+            width: 10%;
+            margin-inline: 0; 
+        }
+
+        &__title {
+            text-align: left;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (min-width: $mq-lg) {
+    .features {
+        &__title {
+            margin-bottom: 100px;
+        }
+
+        &__cards {
+            margin-bottom: 100px;
+        }
+    }
+}

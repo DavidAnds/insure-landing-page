@@ -1,0 +1,49 @@
+.title {
+    &--1 {
+        @include f-display;
+        font-size: 2.8rem;
+        line-height: 1em;
+        font-weight: $fw-lg;
+    }
+
+    &--2 {
+        @include f-display;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        line-height: 1em;
+        font-weight: $fw-lg;
+    }
+}
+
+.text {
+    @include f-karla;
+}
+
+.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    @include f-karla;
+    font-weight: $fw-lg;
+    letter-spacing: 0.08em;
+
+    &--2 {
+        text-transform: uppercase;
+        text-decoration: none;
+        @include f-karla;
+        font-weight: $fw-lg;
+        letter-spacing: 0.08em;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: $mq-lg) {
+    .title {
+        &--1 {
+            font-size: 3.5rem;
+        }
+
+        &--2 {
+            font-size: 2rem;
+        }
+    }
+}
